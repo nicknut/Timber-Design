@@ -81,3 +81,42 @@ Timber-Design
                     nominalLabel.text = @"5x5";
                 }
 }
+
+
+
+
+//
+//  ViewController.h
+//  TimberDesign
+//
+//  Created by Nick Nutter on 5/28/13.
+//  Copyright (c) 2013 Nick Nutter. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface ViewController : UIViewController {
+    
+
+    IBOutlet UILabel *label;
+    IBOutlet UILabel *nominalLabel;
+    IBOutlet UIPickerView *Picker;
+    IBOutlet UIBarButtonItem *selectButton;
+    NSArray *PickerData;
+
+}
+
+
+@property (retain, nonatomic) IBOutlet UIPickerView *Picker;
+@property (retain, nonatomic) NSArray *PickerData;
+@property (strong, nonatomic) IBOutlet UIPickerView *pickerViewContainer;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *selectButton;
+
+
+- (IBAction)nominalButton:(id)sender;
+
+- (IBAction)hideButton:(id)sender;
+
+
+
+@end
